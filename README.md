@@ -1,11 +1,14 @@
+# Express project
 ## Installation
 
 Install dependencies:
 ```
 npm install
 ```
-Start your Express.js app at `http://localhost:4000/`
+Copy .env.example .env
 
+## Usage
+Start your Express.js app at `http://localhost:4000/`
 ```
-npm start
+npm run start
 ```

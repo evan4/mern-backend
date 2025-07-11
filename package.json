@@ -7,8 +7,12 @@
     "start": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evan4/mern-backend.git"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",

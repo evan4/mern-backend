@@ -12,7 +12,7 @@ const resumeRoutes = express.Router();
 resumeRoutes.get('/', protect, getUsersResumes);
 resumeRoutes.get('/:id', protect, getResumeById);
 
-resumeRoutes.post('/:id', protect, createResume);
+resumeRoutes.post('/', protect, createResume);
 resumeRoutes.put('/:id', protect, updateResume);
 resumeRoutes.put('/:id/upload-images', protect, uploadResumeImages);
 

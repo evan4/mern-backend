@@ -178,17 +178,17 @@ export const deleteResume = async (req, res) => {
       }
     }
 
-    const deletedResume = Resume.findByIdAndDelete({
-      _id: req.params.id,
-      userId: req.user._id,
-    });
+    const deletedResume = await Resume.findByIdAndDelete(req.params.id);
 
     if (!deletedResume) {
-      return res.status(404).json({ message: 'Resume not found' });
+      return res.status(404).json({ 
+        message: 'Resume not found',
+       });
     }
 
     res.json({
       message: "Resume deleted successful",
+      deletedResume,
     });
 
   } catch (error) {

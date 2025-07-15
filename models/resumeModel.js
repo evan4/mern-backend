@@ -76,6 +76,8 @@ const ResumeSchema = new mongoose.Schema({
     }
   ],
   interests: [String],
+}, {
+  timestamps: true,
 });
 
 export default mongoose.model('Resume', ResumeSchema);
